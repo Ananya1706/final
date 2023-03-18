@@ -1,0 +1,149 @@
+   
+    
+    body{ background-color: rgb(215, 180, 242)}
+.hero img{
+    width: 450px; ;
+    border: 5px dotted #a372c4 ;
+    float: left;
+    margin-left: 90px;
+    
+}
+header{
+    text-align: center;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+        ul{
+        text-align: center;
+        display:flex; 
+        justify-content: space-around;
+     }
+        
+        li{
+            width:25% ;
+        border: 2px solid white;
+        line-height: 4em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: aliceblue;
+        list-style: none;
+        background-color: #a372c4;
+        } 
+        a{
+            text-decoration: none;
+        }
+        h3{
+            text-align: center;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            color: aliceblue;
+            font-size: 1.3em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        } 
+        p.About { 
+        padding: 5px;
+        margin: 10px;
+        float: right;
+        width: 50%;
+        }
+
+.slider-show {
+    float: right;
+    /* cool image placement hack from my (awesome) friend josh */
+    transform: scale(0.6) translate(0, -200px);
+}
+
+
+.pic img,.pic2 img {
+    width: 100%;
+
+}
+
+.imgandtext {
+    display: flex; 
+    flex-direction: row;
+}
+
+.pic {
+    flex-grow: 2;
+    padding: 200px;
+    padding-top: 100px;
+}
+.pic2 {
+    flex-grow: 0;
+    padding: 100px;
+    padding-top: 100px;
+    flex-basis: 50%;
+}
+.textb { 
+flex-basis: 50%;
+}
+
+.title { 
+    color: aliceblue;
+            font-size: 5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {font-family: Verdana, Geneva, Tahoma, sans-serif; }
+.contacttext{ 
+    font-size: 2em;
+
+}
+.contactp {
+    font-size:2em ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.porttext {
+    color: aliceblue;
+    text-align: center;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.images img { 
+    width: 400px;
+    margin: 20px;
+    border: 5px dotted #a372c4 ;
+}
+.images >div>div { 
+
+text-align: center;
+background-color: #a372c4; 
+border-radius: 5px;
+height: 40px;
+vertical-align: middle; 
+margin: 0px 50px;
+padding-top: 20px;
+color: aliceblue;
+cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .imgandtext {
+        display: flex; 
+        flex-direction: column;
+    }
+    .textb { 
+        flex-basis: 50%;
+        padding:20px;
+        }  
+        .pic {
+            padding: 50px;
+        }
+        ul{
+            text-align: center;
+            display:flex; 
+            flex-direction: column;
+            justify-content: space-around;
+         }
+         li{
+            width:100% ;
+        } 
+    .pic2 {
+        padding: 50px;
+    }
+}
